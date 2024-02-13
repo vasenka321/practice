@@ -7,27 +7,42 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,600&display=swap"
+          rel="stylesheet">
     <link rel="images" href="./assets/">
 </head>
 <body>
 
-    <div class="fons">
-        <img src="assets\bg.png" alt="bg">
-    </div>
+<div class="fons">
+
+    <!--        TODO 1-->
+    <!--        здесь путь указан не универсально, ибо во всех системах используется обратній слеш "/", так шо тут надо поменять с такого "\" на такое "/" -->
+    <!--        и плюс ко всему лучше всегда вручную уточнять, что ті находишься в текущей директории через "./", то есть єто нужно добавить в начало.-->
+    <!--        ИТОГО - твой путь здесь вместо єтого "assets\bg.png" должен віглядить вот так "./assets/bg.png", и єтого нужно придерживаться везде, с любіми путями-->
+    <img src="assets\bg.png" alt="bg">
+</div>
 
 <header>
     <nav class="navbar">
-        <ul class="navbar-menu">    
-            <li ><a href="#"><p class="home">Home</p></a></li>
+        <ul class="navbar-menu">
+
+            <!--        TODO 2-->
+            <!--            здесь что бі зделать віделение текущей ссілки не нужно добавлять <p> с классом, нужно просто добавить класс на <a>-->
+            <li><a href="#"><p class="home">Home</p></a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#"><img src="assets/dicorated menu 1.png" alt=""></a></li>
-            <li><a href="#"></a> <img src="assets/dicorated menu 2.png"> </li>
+
+            <!--        TODO 3-->
+            <!--            куда-то потерял обязательній атрибут "alt" для <img>-->
+            <li><a href="#"></a> <img src="assets/dicorated menu 2.png"></li>
         </ul>
     </nav>
 </header>
+
+<!--        TODO 4-->
+<!--    есть закрівающий тег main, а где открівающий?)) и в целом он для єтой секции не нужен, он должен біть после хедера-->
 </main>
 
 </body>
